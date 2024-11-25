@@ -1,22 +1,22 @@
 /* Estilos gerais */
-
-/* Estilos gerais */
 body {
   margin: 0; /* Remove qualquer espaçamento padrão */
   padding: 0;
   box-sizing: border-box; /* Garante que o padding e o border sejam incluídos nas dimensões */
+  background: url('./fundo.png') no-repeat center center fixed;
+  background-size: cover; /* Garante que a imagem cubra todo o fundo */
 }
 
 .app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Altera para começar do topo,adcionado para resolver problema de espaçamento dia 18/11/2024 */
-  background-color: #f0fff4;
+  justify-content: flex-start; /* Altera para começar do topo, adicionado para resolver problema de espaçamento dia 18/11/2024 */
+  background-color: rgba(240, 255, 244, 0.85); /* Fundo com um leve tom de cor e transparência */
   min-height: 100vh; /* Garante altura mínima para ocupar a janela inteira */
   width: 100%; /* Garante que ocupe toda a largura da página */
-  padding: 0; /* Remove qualquer padding extra,adcionado para resolver problema de espaçamento dia 18/11/2024 */
-  margin: 0; /* Remove qualquer margem adcionado para resolver problema de espaçamento dia 18/11/2024*/
+  padding: 0; /* Remove qualquer padding extra, adicionado para resolver problema de espaçamento dia 18/11/2024 */
+  margin: 0; /* Remove qualquer margem, adicionado para resolver problema de espaçamento dia 18/11/2024 */
 }
 
 /* Estilo do título principal */
@@ -29,10 +29,9 @@ body {
 /* Estilo do subtítulo */
 .subtitulo {
   font-size: 1.5rem;
-  color: #388e3c;       /* Verde médio */
+  color: #388e3c; /* Verde médio */
   margin-bottom: 20px; /* Espaçamento inferior */
 }
-
 
 .lista-enderecos, .rota {
   margin: 20px auto; /* Ajusta a margem */
@@ -40,45 +39,34 @@ body {
   max-width: 600px;
   padding: 20px;
 }
-/*.lista-enderecos {
-  width: 80%;
-  max-width: 600px;
-  background-color: #ffffff;  /* Fundo branco
-  padding: 20px;
-  border-radius: 8px;  /* Bordas arredondadas
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave
-   margin-top: 20px;
-}
-*/
 
 /* Estilos do formulário de endereço */
 .form-container {
   display: flex;
-  felx-direction: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*height: 100vh;  /* Ocupa toda a altura da tela */
   background-color: #e7f5e6; /* Fundo verde claro */
-  padding: 20px 0; /*Adicionado padding para espacamento dia 25/11/2024*/
+  padding: 20px 0; /* Adicionado padding para espaçamento dia 25/11/2024 */
 }
 
 .endereco-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;   /* Espaçamento entre os elementos */
+  gap: 15px; /* Espaçamento entre os elementos */
   padding: 20px;
-  background-color: #fff;  /* Fundo branco */
-  border-radius: 8px;   /* Bordas arredondadas */
+  background-color: #fff; /* Fundo branco */
+  border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
   width: 100%;
-  width: 300px;   /* Limita a largura máxima */
+  max-width: 300px; /* Limita a largura máxima */
 }
 
 /* Campos de entrada */
 .input-field {
   padding: 10px;
-  border: 1px solid #b7d7b4;  /* Borda verde claro */
-  border-radius: 4px;    /* Bordas arredondadas */
+  border: 1px solid #b7d7b4; /* Borda verde claro */
+  border-radius: 4px; /* Bordas arredondadas */
   font-size: 14px;
   width: 100%;
   box-sizing: border-box;
@@ -99,6 +87,7 @@ body {
 .submit-button:hover {
   background-color: #45a049; /* Verde mais escuro */
 }
+
 /* Mensagem de sucesso */
 .message {
   text-align: center;
@@ -110,10 +99,9 @@ body {
 /* Estilos dos botões adicionais */
 .add-button, .clear-button {
   width: 100%;
- /* margin-top: 8px;*/
   padding: 10px;
   font-size: 14px;
-  border-radius: 4px;  /* Bordas arredondadas */
+  border-radius: 4px; /* Bordas arredondadas */
   box-sizing: border-box;
 }
 
@@ -125,11 +113,12 @@ body {
 }
 
 .clear-button {
-  background-color: #f44336;/* Vermelho */
+  background-color: #f44336; /* Vermelho */
   color: white;
   cursor: pointer;
   margin-top: 10px;
 }
+
 /* Itens da lista de endereços */
 .endereco-item {
   margin: 8px 0;
@@ -139,12 +128,9 @@ body {
 .rota {
   width: 80%;
   max-width: 600px;
-  background-color: #ffffff;  /* Fundo branco */
+  background-color: #ffffff; /* Fundo branco */
   padding: 20px;
-  border-radius: 8px;   /* Bordas arredondadas */
+  border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
   margin-top: 20px;
 }
-
-
-
