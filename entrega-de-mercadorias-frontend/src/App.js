@@ -60,7 +60,8 @@ const App = () => {
             enderecosFiltrados.map((endereco) => (
               <li key={endereco.id} className="endereco-item">
                 {`${endereco.rua}, ${endereco.cidade} - ${endereco.estado}, CEP: ${endereco.cep}`}
-                <button onClick={() => handleAddToRota(endereco)} className="add-button">
+                <button onClick={() => handleAddToRota(endereco)}
+                className="add-button">
                   Adicionar à Rota
                 </button>
               </li>

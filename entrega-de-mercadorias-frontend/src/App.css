@@ -1,61 +1,90 @@
 /* Estilos gerais */
+
+/* Estilos gerais */
+body {
+  margin: 0; /* Remove qualquer espaçamento padrão */
+  padding: 0;
+  box-sizing: border-box; /* Garante que o padding e o border sejam incluídos nas dimensões */
+}
+
 .app {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start; /* Altera para começar do topo,adcionado para resolver problema de espaçamento dia 18/11/2024 */
   background-color: #f0fff4;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Garante altura mínima para ocupar a janela inteira */
+  width: 100%; /* Garante que ocupe toda a largura da página */
+  padding: 0; /* Remove qualquer padding extra,adcionado para resolver problema de espaçamento dia 18/11/2024 */
+  margin: 0; /* Remove qualquer margem adcionado para resolver problema de espaçamento dia 18/11/2024*/
 }
 
+/* Estilo do título principal */
 .titulo-principal {
   font-size: 2.5rem;
   color: #2e7d32;
+  margin-bottom: 10px; /* Espaçamento inferior */
 }
 
+/* Estilo do subtítulo */
 .subtitulo {
   font-size: 1.5rem;
-  color: #388e3c;
+  color: #388e3c;       /* Verde médio */
+  margin-bottom: 20px; /* Espaçamento inferior */
 }
 
-.lista-enderecos {
+
+.lista-enderecos, .rota {
+  margin: 20px auto; /* Ajusta a margem */
   width: 80%;
   max-width: 600px;
-  background-color: #ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+/*.lista-enderecos {
+  width: 80%;
+  max-width: 600px;
+  background-color: #ffffff;  /* Fundo branco
+  padding: 20px;
+  border-radius: 8px;  /* Bordas arredondadas
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave
+   margin-top: 20px;
+}
+*/
 
 /* Estilos do formulário de endereço */
 .form-container {
   display: flex;
+  felx-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #e7f5e6;
+  /*height: 100vh;  /* Ocupa toda a altura da tela */
+  background-color: #e7f5e6; /* Fundo verde claro */
+  padding: 20px 0; /*Adicionado padding para espacamento dia 25/11/2024*/
 }
 
 .endereco-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;   /* Espaçamento entre os elementos */
   padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  background-color: #fff;  /* Fundo branco */
+  border-radius: 8px;   /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  width: 100%;
+  width: 300px;   /* Limita a largura máxima */
 }
 
+/* Campos de entrada */
 .input-field {
   padding: 10px;
-  border: 1px solid #b7d7b4;
-  border-radius: 4px;
+  border: 1px solid #b7d7b4;  /* Borda verde claro */
+  border-radius: 4px;    /* Bordas arredondadas */
   font-size: 14px;
   width: 100%;
   box-sizing: border-box;
 }
 
+/* Botão de envio */
 .submit-button {
   padding: 10px;
   background-color: #4CAF50;
@@ -64,12 +93,13 @@
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Animação ao passar o mouse */
 }
 
 .submit-button:hover {
-  background-color: #45a049;
+  background-color: #45a049; /* Verde mais escuro */
 }
-
+/* Mensagem de sucesso */
 .message {
   text-align: center;
   color: green;
@@ -80,35 +110,41 @@
 /* Estilos dos botões adicionais */
 .add-button, .clear-button {
   width: 100%;
-  margin-top: 8px;
+ /* margin-top: 8px;*/
   padding: 10px;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 4px;  /* Bordas arredondadas */
   box-sizing: border-box;
 }
 
 .add-button {
-  background-color: #4CAF50;
+  background-color: #4CAF50; /* Verde */
   color: white;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .clear-button {
-  background-color: #f44336;
+  background-color: #f44336;/* Vermelho */
   color: white;
   cursor: pointer;
+  margin-top: 10px;
 }
-
+/* Itens da lista de endereços */
 .endereco-item {
   margin: 8px 0;
 }
+
+/* Estilo da seção de rota */
 .rota {
   width: 80%;
   max-width: 600px;
-  background-color: #ffffff;
+  background-color: #ffffff;  /* Fundo branco */
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;   /* Bordas arredondadas */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
   margin-top: 20px;
 }
+
+
 
